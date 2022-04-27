@@ -9,6 +9,9 @@ export class Stack {
 
     pop() {
         //what if stack is empty?
+        if(this.items.length === 0) {
+            throw "Error: Cannot pop empty stack";
+        }
         return this.items.pop();
     }
 
@@ -22,9 +25,9 @@ export class Stack {
 
     print() {
         let str = '';
-        for(let i = 0; i < this.items.size; ++i) {
+        for(let i = 0; i < this.items.length; ++i) {
             str += this.items[i] + " ";
         }
-        return str.trim();
+        return str;
     }
 }
