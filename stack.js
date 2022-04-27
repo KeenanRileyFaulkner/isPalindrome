@@ -23,10 +23,19 @@ export class Stack {
         return this.items.length === 0;
     }
 
+    clear() {
+        while(this.items.length > 0) {
+            this.items.pop();
+        }
+    }
+
     print() {
         let str = '';
         for(let i = 0; i < this.items.length; ++i) {
             str += this.items[i] + " ";
+        }
+        if(this.items.length === 0) {
+            str += "The stack is empty";
         }
         return str;
     }

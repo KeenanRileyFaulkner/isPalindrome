@@ -18,6 +18,7 @@ function isPalindrome(str) {
             if(str[i] === myStack.pop()) {
                 continue;
             } else {
+                myStack.clear();
                 return false;
             }
         }
@@ -26,6 +27,7 @@ function isPalindrome(str) {
             if(str[i] === myStack.pop()) {
                 continue;
             } else {
+                myStack.clear();
                 return false;
             }
         }
