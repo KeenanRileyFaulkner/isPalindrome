@@ -3,11 +3,7 @@ import {Stack} from './stack.js';
 let myStack = new Stack();
 
 function strSizeIsEven(str) {
-    if(str.length % 2 === 0) {
-        return true;
-    } else {
-        return false;
-    }
+    return str.length % 2 === 0;
 }
 
 function isPalindrome(str) {
