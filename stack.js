@@ -29,7 +29,8 @@ export class Stack {
         }
     }
 
-    print() {
+    //returns a string with stack contents but DOES NOT PRINT TO CONSOLE
+    toString() {
         let str = '';
         for(let i = 0; i < this.items.length; ++i) {
             str += this.items[i] + " ";
