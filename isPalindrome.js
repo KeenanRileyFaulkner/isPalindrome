@@ -3,7 +3,11 @@ import {Stack} from './stack.js';
 let myStack = new Stack();
 
 function strSizeIsEven(str) {
-    str.length / 2 === 0 ? true : false;
+    if(str.length % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 function isPalindrome(str) {
@@ -39,6 +43,8 @@ function isPalindrome(str) {
 console.log(isPalindrome('Hannah'));
 console.log(isPalindrome('hanah'));
 console.log(isPalindrome('racecar '));
+console.log(isPalindrome(`racecar`));
+console.log(isPalindrome("hannah"));
 console.log(isPalindrome(12321));
 console.log(isPalindrome(124289));
 console.log(isPalindrome("I did , did I"));
